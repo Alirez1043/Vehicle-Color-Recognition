@@ -1,0 +1,27 @@
+version: '3.3'
+services:
+  web_app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    ports:
+      - '8080:8080'
+    container_name: web_app
+    networks:
+      - app
+  tf_serving:
+    ports:
+      - '8501:8501'
+    container_name: vcor
+    environment:
+      - MODEL_NAME=saved_model
+    image: tensorflow/serving
+    volumes:
+      - type: bind
+        source: ./model/
+        target: /models/saved_model/1
+    networks:
+      - app
+networks:
+  app:
+    driver: bridge

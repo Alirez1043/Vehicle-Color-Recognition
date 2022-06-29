@@ -1,0 +1,8 @@
+Flask==2.1.0
+nsvision==0.1.9
+numpy==1.18.*
+pandas
+requests==2.22.0
+protobuf==3.20.*
+matplotlib==3.3.3
+

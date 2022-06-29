@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.11.5, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.11.5, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo4.png" type="image/x-icon">
+  <meta name="description" content="Website Creator Description">
+  
+  <title>index</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap.min.css') }}"> 
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap-grid.min.css') }}"> 
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap-reboot.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/tether/tether.min.css') }}"> 
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/theme/css/style.css') }}"> 
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="{{ url_for('static', filename='assets/mobirise/css/mbr-additional.css') }}" type="text/css">
+  
+  
+  
+</head>
+<body>
+  <section class="header1 cid-rHIL26oNcb" id="header1-n">
+
+    
+
+    
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="mbr-white col-md-10">
+                <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-1">Vehicle Color Classification</h1>
+                <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-2"><em>Detect car color using Deep Learning</em></h3>
+                
+                <div class="mbr-section-btn align-center"><a class="btn btn-md btn-secondary display-7" href="https://github.com/Alirez1043/Vehicle-Color-Recognition" target="_blank"><span class="mbri-github mbr-iconfont mbr-iconfont-btn"></span>
+                        LEARN MORE</a></div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="engine"><a href="https://mobirise.info/y">free html web templates</a></section><section class="mbr-section form1 cid-rHIKRxHNO7 mbr-parallax-background" id="form1-m">
+
+    
+
+    <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(193, 193, 193);">
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-12 col-lg-8">
+                
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="media-container-column col-lg-8" data-form-type="formoid">
+                <!---Formbuilder Form--->
+                <form action="/predict_object/" method="POST" class="mbr-form form-with-styler">
+                    <div class="row">
+                        
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                        </div>
+                    </div>
+                    <div class="dragArea row">
+                        
+                        
+                        <div data-for="image_url" class="col-md-4  form-group">
+                            <label for="phone-form1-m" class="form-control-label mbr-fonts-style display-5">Image URL :&nbsp;</label>
+                            <input type="tel" name="image_url" data-form-field="Phone" class="form-control display-7" id="phone-form1-m">
+                        </div>
+                        
+                        <div class="col-md-12 input-group-btn align-center"><button type="submit" class="btn btn-primary btn-form display-4" value="predict"><span class="mbri-magic-stick mbr-iconfont mbr-iconfont-btn"></span>Predict</button></div>
+                        {% if message %}
+                        <h2>{{message}}</h2><br>
+
+                        <p><img src="{{image_url}}" style='width:500px'/><br>
+
+                        {% endif %}
+                    </div>
+                </form><!---Formbuilder Form--->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="{{ url_for('static', filename='assets/web/assets/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/popper/popper.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/bootstrap/js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/tether/tether.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/smoothscroll/smooth-scroll.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/parallax/jarallax.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/theme/js/script.js') }}"></script>
+  
+  
+  
+</body>
+</html>
