@@ -15,3 +15,17 @@
 ```
 git lfs clone https://github.com/Alirez1043/Vehicle-Color-Recognition.git
 ```
+Change current directory to project directory
+```
+cd Vehicle-Color-Recognition
+```
+### 2. Build and run the Docker Stack (TensorFlow serving and Web App)
+```
+docker-compose build 
+```
+```
+docker-compose up
+```
+### 3. Open the Web App and try it out !
+The App should be running on    ```http://localhost:5000```
+
