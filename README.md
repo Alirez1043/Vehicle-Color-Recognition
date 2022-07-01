@@ -29,3 +29,4 @@ docker-compose up
 ### 3. Open the Web App and try it out !
 The App should be running on    ```http://localhost:8080```
 
+**Notice : To get image url you must upload it and copy uploaded link .**
