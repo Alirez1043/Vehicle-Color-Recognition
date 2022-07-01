@@ -1,4 +1,4 @@
-# Vehicle-Color-Recognition
+# Deploying Vehicle-Color-Recognition based Tensorflow model using Tensorflow Serving, Flask, Docker and Docker compose
 
 ## How to Run App
 
