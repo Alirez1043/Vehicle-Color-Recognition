@@ -27,5 +27,5 @@ docker-compose build
 docker-compose up
 ```
 ### 3. Open the Web App and try it out !
-The App should be running on    ```http://localhost:5000```
+The App should be running on    ```http://localhost:8080```
 
